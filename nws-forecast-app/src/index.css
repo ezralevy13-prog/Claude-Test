@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+  --color-dark-sky-bg: #1a1a2e;
+  --color-dark-sky-card: #16213e;
+  --color-dark-sky-accent: #0f3460;
+  --color-dark-sky-text: #e4e4e4;
+  --color-dark-sky-blue: #5b8fb9;
+}
+
+body {
+  background: linear-gradient(to bottom, var(--color-dark-sky-bg), var(--color-dark-sky-accent));
+  color: var(--color-dark-sky-text);
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: Inter, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.glass-card {
+  background: color-mix(in srgb, var(--color-dark-sky-card) 40%, transparent);
+  backdrop-filter: blur(12px);
+  border-radius: 1rem;
+  border: 1px solid color-mix(in srgb, white 10%, transparent);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.forecast-text {
+  color: color-mix(in srgb, var(--color-dark-sky-text) 90%, transparent);
+  line-height: 1.75;
+}
+
+.section-header {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: color-mix(in srgb, white 95%, transparent);
+}
+
+.metric-value {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: white;
+}
+
+.metric-label {
+  font-size: 0.875rem;
+  color: color-mix(in srgb, var(--color-dark-sky-text) 70%, transparent);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
