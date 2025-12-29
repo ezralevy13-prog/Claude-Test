@@ -1,8 +1,4 @@
 {
-  "buildCommand": "cd nws-forecast-app && npm install && npm run build",
-  "outputDirectory": "nws-forecast-app/dist",
-  "installCommand": "cd nws-forecast-app && npm install",
-  "framework": null,
   "rewrites": [
     {
       "source": "/(.*)",
